@@ -5,7 +5,7 @@
 const types = [
   {
     'name': 'Bug',
-    'photo': '../../assets/images/Bug Type.png',
+    'photo': '/images/Bug Type.png',
     'scores':[
       1, //HP - 67.11
       1, //Attack - 91.61
@@ -21,7 +21,7 @@ const types = [
   },
   {
     'name': 'Dark',
-    'photo': '../../assets/images/Dark Type.png',
+    'photo': '/images/Dark Type.png',
     'scores':[
       1,
       5,
@@ -37,7 +37,7 @@ const types = [
   },
   {
     'name': 'Dragon',
-    'photo': '../../assets/images/Dragon Type.png',
+    'photo': '/images/Dragon Type.png',
     'scores':[
       4,
       5,
@@ -53,7 +53,7 @@ const types = [
   },
   {
     'name': 'Electric',
-    'photo': '../../assets/images/Electric Type.png',
+    'photo': '/images/Electric Type.png',
     'scores':[
       1,
       1,
@@ -69,7 +69,7 @@ const types = [
   },
   {
     'name': 'Fairy',
-    'photo': '../../assets/images/Fairy Type.png',
+    'photo': '/images/Fairy Type.png',
     'scores':[
       1,
       1,
@@ -85,7 +85,7 @@ const types = [
   },
   {
     'name': 'Fighting',
-    'photo': '../../assets/images/Fighting Type.png',
+    'photo': '/images/Fighting Type.png',
     'scores':[
       2,
       5,
@@ -101,7 +101,7 @@ const types = [
   },
   {
     'name': 'Fire',
-    'photo': '../../assets/images/Fire Type.png',
+    'photo': '/images/Fire Type.png',
     'scores':[
       1,
       4,
@@ -117,7 +117,7 @@ const types = [
   },
   {
     'name': 'Flying',
-    'photo': '../../assets/images/Flying Type.png',
+    'photo': '/images/Flying Type.png',
     'scores':[
       1,
       3,
@@ -133,7 +133,7 @@ const types = [
   },
   {
     'name': 'Ghost',
-    'photo': '../../assets/images/Ghost Type.png',
+    'photo': '/images/Ghost Type.png',
     'scores':[
       1,
       2,
@@ -149,7 +149,7 @@ const types = [
   },
   {
     'name': 'Grass',
-    'photo': '../../assets/images/Grass Type.png',
+    'photo': '/images/Grass Type.png',
     'scores':[
       1,
       1,
@@ -165,7 +165,7 @@ const types = [
   },
   {
     'name': 'Ground',
-    'photo': '../../assets/images/Ground Type.png',
+    'photo': '/images/Ground Type.png',
     'scores':[
       2,
       5,
@@ -181,7 +181,7 @@ const types = [
   },
   {
     'name': 'Ice',
-    'photo': '../../assets/images/Ice Type.png',
+    'photo': '/images/Ice Type.png',
     'scores':[
       3,
       4,
@@ -197,7 +197,7 @@ const types = [
   },
   {
     'name': 'Normal',
-    'photo': '../../assets/images/Normal Type.png',
+    'photo': '/images/Normal Type.png',
     'scores':[
       2,
       1,
@@ -213,7 +213,7 @@ const types = [
   },
   {
     'name': 'Poison',
-    'photo': '../../assets/images/Poison Type.png',
+    'photo': '/images/Poison Type.png',
     'scores':[
       1,
       1,
@@ -229,7 +229,7 @@ const types = [
   },
   {
     'name': 'Psychic',
-    'photo': '../../assets/images/Psychic Type.png',
+    'photo': '/images/Psychic Type.png',
     'scores':[
       1,
       1,
@@ -245,7 +245,7 @@ const types = [
   },
   {
     'name': 'Rock',
-    'photo': '../../assets/images/Rock Type.png',
+    'photo': '/images/Rock Type.png',
     'scores':[
       1,
       5,
@@ -261,7 +261,7 @@ const types = [
   },
   {
     'name': 'Steel',
-    'photo': '../../assets/images/Steel Type.png',
+    'photo': '/images/Steel Type.png',
     'scores':[
       1,
       5,
@@ -277,7 +277,7 @@ const types = [
   },
   {
     'name': 'Water',
-    'photo': '../../assets/images/Water Type.png',
+    'photo': '/images/Water Type.png',
     'scores':[
       1,
       1,
@@ -292,3 +292,5 @@ const types = [
     ]
   },
 ]
+
+module.exports = types;

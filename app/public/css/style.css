@@ -1,5 +1,5 @@
 .mainpanel{
-	margin: 2.44em;
+	margin: 1.6em;
 }
 
  #mainpanel-content {
@@ -8,17 +8,21 @@
  }
 body {
  margin: 0px auto; 
-
  display: flex;
  min-height: 100vh;
  flex-direction: column;
 }
-
+.homeBG{
+  background-image: url('/images/PokemonBG.png');
+}
+.surveyBG{
+  background-image: url('/images/PokemonBG3.png');
+}
 main {
   flex: 1 0 auto;
 }
 .footer-copyright{
-  height:3em;
+  height:4em;
 }
 
 nav ul li:hover {
@@ -31,4 +35,8 @@ nav ul li:hover {
 
 .select-dropdown{
   color:lightgray;
+}
+.footerText{
+  margin:auto;
+  padding:auto;
 }

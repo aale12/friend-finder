@@ -15,16 +15,16 @@
 </head>
 <!--Start Body-->
 
-<body>
+<body class='surveyBG'>
   <!--Header-->
   <header>
     <nav>
       <div class="nav-wrapper grey darken-4">
         <a href="#" class="brand-logo">Pokemon Types Finder</a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a href="sass.html">Take The Survey!</a></li>
-          <li><a href="badges.html">View API</a></li>
-          <li><a href="#">GitHub Repo</a></li>
+          <li><a href="/survey">Reload Survey</a></li>
+          <li><a href="/api/types">View API</a></li>
+          <li><a href="https://github.com/aale12">GitHub Repo</a></li>
 
         </ul>
       </div>
@@ -36,146 +36,17 @@
       <div class="row">
         <div class="col s12 mainpanel grey darken-3 z-depth-5">
           <div id="mainpanel-content">
+            <h3 class='red-text text-darken-1 error'></h3>
             <h1>Questions!</h1>
             <div class="divider"></div>
             <h3>First, Let's get a name!</h3>
-            <div class="input-field col s12">
+            <div id="name-wrapper" class="input-field col s12">
               <h5>Name (Required)</h5>
               <i class="material-icons">account_circle</i>
-              <input type="text" class="validate" placeholder="Your Name Here" id="userName">
+              <input type="text" class="validate grey-text text-lighten-4" placeholder="Your Name Here" id="userName">
             </div>
             <!--Begin Questions Here-->
-            <div id='survey-wrapper'>
-              <!-- <div class="input-field col s12 grey-text text-lighten-4"> -->
-              <!-- <h3>Question 1!</h3>
-                <h5>You are rather healthy. It takes a lot to wear you down.</h5>
-                <select id="question1" class="selectText">
-                  <option value="" disabled selected>Choose your option</option>
-                  <option value="1">1 (Strongly Disagree)</option>
-                  <option value="2">2 (Disagree)</option>
-                  <option value="3">3 (Neutral)</option>
-                  <option value="4">4 (Agree)</option>
-                  <option value="5">5 (Strongly Agree)</option>
-                </select>
-              </div>
-
-              <div class="input-field col s12 grey-text text-lighten-4">
-                <h3>Question 2!</h3>
-                <h5>You are physically strong. Lifting weights and Karate chopping boards is easy for you.</h5>
-                <select id="question2" class="selectText">
-                  <option value="" disabled selected>Choose your option</option>
-                  <option value="1">1 (Strongly Disagree)</option>
-                  <option value="2">2 (Disagree)</option>
-                  <option value="3">3 (Neutral)</option>
-                  <option value="4">4 (Agree)</option>
-                  <option value="5">5 (Strongly Agree)</option>
-                </select>
-              </div>
-
-              <div class="input-field col s12 grey-text text-lighten-4">
-                <h3>Question 3!</h3>
-                <h5>You are durable. You can withstand attacks where others would falter.</h5>
-                <select id="question3" class="selectText">
-                  <option value="" disabled selected>Choose your option</option>
-                  <option value="1">1 (Strongly Disagree)</option>
-                  <option value="2">2 (Disagree)</option>
-                  <option value="3">3 (Neutral)</option>
-                  <option value="4">4 (Agree)</option>
-                  <option value="5">5 (Strongly Agree)</option>
-                </select>
-              </div>
-
-              <div class="input-field col s12 grey-text text-lighten-4">
-                <h3>Question 4!</h3>
-                <h5>Your mind is sharp and you are inquisitive. You enjoy puzzles and riddles.</h5>
-                <select id="question4" class="selectText">
-                  <option value="" disabled selected>Choose your option</option>
-                  <option value="1">1 (Strongly Disagree)</option>
-                  <option value="2">2 (Disagree)</option>
-                  <option value="3">3 (Neutral)</option>
-                  <option value="4">4 (Agree)</option>
-                  <option value="5">5 (Strongly Agree)</option>
-                </select>
-              </div>
-
-              <div class="input-field col s12 grey-text text-lighten-4">
-                <h3>Question 5!</h3>
-                <h5>You don't really care about other peoples negative opinions of you.</h5>
-                <select id="question5" class="selectText">
-                  <option value="" disabled selected>Choose your option</option>
-                  <option value="1">1 (Strongly Disagree)</option>
-                  <option value="2">2 (Disagree)</option>
-                  <option value="3">3 (Neutral)</option>
-                  <option value="4">4 (Agree)</option>
-                  <option value="5">5 (Strongly Agree)</option>
-                </select>
-              </div>
-
-              <div class="input-field col s12 grey-text text-lighten-4">
-                <h3>Question 6!</h3>
-                <h5>You are quick on your feet and are often the first one to the finish line.</h5>
-                <select id="question6" class="selectText">
-                  <option value="" disabled selected>Choose your option</option>
-                  <option value="1">1 (Strongly Disagree)</option>
-                  <option value="2">2 (Disagree)</option>
-                  <option value="3">3 (Neutral)</option>
-                  <option value="4">4 (Agree)</option>
-                  <option value="5">5 (Strongly Agree)</option>
-                </select>
-              </div>
-
-              <div class="input-field col s12 grey-text text-lighten-4">
-                <h3>Question 7!</h3>
-                <h5>You are sociable. You get along well with others and they get along well with you.</h5>
-                <select id="question7" class="selectText">
-                  <option value="" disabled selected>Choose your option</option>
-                  <option value="1">1 (Strongly Disagree)</option>
-                  <option value="2">2 (Disagree)</option>
-                  <option value="3">3 (Neutral)</option>
-                  <option value="4">4 (Agree)</option>
-                  <option value="5">5 (Strongly Agree)</option>
-                </select>
-              </div>
-
-              <div class="input-field col s12 grey-text text-lighten-4">
-                <h3>Question 8!</h3>
-                <h5>You're a practical thinker. You plan your actions out before you take them.</h5>
-                <select id="question8" class="selectText">
-                  <option value="" disabled selected>Choose your option</option>
-                  <option value="1">1 (Strongly Disagree)</option>
-                  <option value="2">2 (Disagree)</option>
-                  <option value="3">3 (Neutral)</option>
-                  <option value="4">4 (Agree)</option>
-                  <option value="5">5 (Strongly Agree)</option>
-                </select>
-              </div>
-
-              <div class="input-field col s12 grey-text text-lighten-4">
-                <h3>Question 9!</h3>
-                <h5>You are full of energy and are always up for an activity.</h5>
-                <select id="question9" class="selectText">
-                  <option value="" disabled selected>Choose your option</option>
-                  <option value="1">1 (Strongly Disagree)</option>
-                  <option value="2">2 (Disagree)</option>
-                  <option value="3">3 (Neutral)</option>
-                  <option value="4">4 (Agree)</option>
-                  <option value="5">5 (Strongly Agree)</option>
-                </select>
-              </div>
-
-              <div class="input-field col s12 grey-text text-lighten-4">
-                <h3>Question 10!</h3>
-                <h5>You are often misunderstood. Not everyone can appreciate your idiosyncrasies.</h5>
-                <select id="question10" class="selectText">
-                  <option value="" disabled selected>Choose your option</option>
-                  <option value="1">1 (Strongly Disagree)</option>
-                  <option value="2">2 (Disagree)</option>
-                  <option value="3">3 (Neutral)</option>
-                  <option value="4">4 (Agree)</option>
-                  <option value="5">5 (Strongly Agree)</option>
-                </select>
-              </div> -->
-            </div>
+            <div id='survey-wrapper'></div>
             <!--Submit Button-->
             <div>
               <button class="btn waves-effect waves-light" type="submit" name="action" id="submitButton">Submit
@@ -191,11 +62,11 @@
 
   <!--Footer-->
   <footer>
-    <div class="footer-copyright grey darken-4 valign-wrapper">
-      <div class="container white-text">
+    <div class="center-align footer-copyright grey darken-4 valign-wrapper">
+      <div class="grey-text text-lighten-4 footerText">
         © 2018 Copyright aale12
-        <a class="white-text text-lighten-4 right" href="#!">More of My Works</a>
       </div>
+    </div>
   </footer>
   <!--Jquery Link-->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -222,10 +93,9 @@
       newQuestion.append(`<h3>Question ${questionCounter}!</h3>`)
         .append(`<h5>${e}</h5>`)
         .append(`<select id="question${questionCounter}" class="selectText">
-          <option value="" disabled selected>Choose your option</option>
           <option value="1">1 (Strongly Disagree)</option>
           <option value="2">2 (Disagree)</option>
-          <option value="3">3 (Neutral)</option>
+          <option value="3" selected>3 (Neutral)</option>
           <option value="4">4 (Agree)</option>
           <option value="5">5 (Strongly Agree)</option>
           </select>`);
@@ -234,7 +104,45 @@
     });
     $(document).ready(() => {
       $('select').formSelect();
-      //const newQuestion = $(`<div class='input-field col s12 grey-text text-lighten-4'>`);
+
+      $('#submitButton').on('click', (event) => {
+        event.preventDefault();
+
+        if ($('#userName').val().trim().length >= 1) {
+          const newEntry = {
+            'name': $('#userName').val().trim(),
+            'photo': '',
+            'scores': [
+              $('#question1').val().trim(),
+              $('#question2').val().trim(),
+              $('#question3').val().trim(),
+              $('#question4').val().trim(),
+              $('#question5').val().trim(),
+              $('#question6').val().trim(),
+              $('#question7').val().trim(),
+              $('#question8').val().trim(),
+              $('#question9').val().trim(),
+              $('#question10').val().trim(),
+            ]
+          };
+          $.post('/api/types', newEntry).done((data) => {
+            console.log(`data is ${JSON.stringify(data, null, 2)}`);
+            $('#mainpanel-content').empty();
+            const matchingDiv = $(`<div id ="matchingDiv" class='center-align'>`);
+            const matchingType = $(`<div id='matchingName'>`);
+            const matchingImage = $(`<img id='matchingType' src='${data.matchingImage}'>`);
+            const matchingSummary = $(`<div id='matchingSummary'>`);
+            matchingType.append(`<h2>Your Matching Pokemon Type is...</h2>`);
+            //matchingSummary.append(`<h5> Summary Goes Here </h5>`);
+            matchingDiv.append(matchingType, matchingImage, matchingSummary);
+            $('#mainpanel-content').append(matchingDiv);
+          });
+        } else {
+          $('.error').html(`<i class="material-icons">error_outline</i>  You must enter a name!`);
+          $("html, body").animate({ scrollTop: 0 }, "slow");
+          return false;
+        }
+      });
     });
   </script>
 </body>

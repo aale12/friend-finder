@@ -15,14 +15,15 @@ const app = express();
 const PORT = process.env.PORT||8080;
 
 // Sets up the Express app to handle data parsing
+app.use(express.static(path.join(__dirname, './app/public')));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // ================================================================================
 // ROUTER
 // ================================================================================
-require("./routes/apiRoutes")(app);
-require("./routes/htmlRoutes")(app);
+require("./app/routes/apiRoutes")(app);
+require("./app/routes/htmlRoutes")(app);
 
 // =============================================================================
 // LISTENER
