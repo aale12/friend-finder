@@ -1,0 +1,34 @@
+.mainpanel{
+	margin: 2.44em;
+}
+
+ #mainpanel-content {
+   margin: 2.44em;
+   color: white;
+ }
+body {
+ margin: 0px auto; 
+
+ display: flex;
+ min-height: 100vh;
+ flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+.footer-copyright{
+  height:3em;
+}
+
+nav ul li:hover {
+  background-color: grey;
+}
+
+.selectText{
+  color:white;
+}
+
+.select-dropdown{
+  color:lightgray;
+}
